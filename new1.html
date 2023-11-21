@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0099CC;
+    }
+
+    .center {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      width: 400px;
+      background: white;
+      border-radius: 10px;
+    }
+
+    .center h1 {
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    form .text {
+      position: relative;
+      border-bottom: 2px solid;
+      margin: 30px;
+    }
+
+    .text input {
+      width: 100%;
+      padding: 0 5px;
+      height: 40px;
+      font-size: 16px;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    .text label {
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      color: #dadada;
+      transform: translateY(-50%);
+      font-size: 16px;
+    }
+
+    .forgotpassword {
+      margin: -5px 0 20px 5px;
+      color: #dadada;
+      cursor: pointer;
+      padding: 30px;
+    }
+
+    button {
+      width: 80%;
+      height: 50px;
+      margin-left: 12%;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: rgb(95, 160, 201);
+      color: white;
+    }
+
+    .signup_link {
+      margin: 30px 0;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .link2 a {
+      color: #2691d9;
+      text-decoration: none;
+    }
+
+    .text1 {
+      display: flex;
+      float: left;
+      width: 20%;
+      margin-top: 5%;
+      font-size: 33px;
+      color: white;
+      padding: 10%;
+      position: relative; 
+    }
+
+    .vl {
+      border-left: 12px solid white;
+      position: absolute;
+      top: 95px; 
+      bottom: 0;
+      left: 95px;
+      height: calc(58% - -5px);
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="text1">
+    <div class="vl"></div>
+    <h1 class="word">Simple Login Form HTML & CSS</h1>
+  </div>
+  <div class="center">
+    <h1>Login</h1>
+    <form>
+      <div class="text">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+      </div>
+      <div class="text">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+      </div>
+      <div class="forgotpassword">Forgot Password?</div>
+      <button type="submit">Login</button>
+      <div class="link2">
+        <a href="#">Not a member? Signup</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
